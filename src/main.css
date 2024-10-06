@@ -1,0 +1,47 @@
+:root {
+  font-size: 62.5%; /* Sets 1rem = 10px (16px * 0.625) */
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+
+  /* Variables */
+  --main-color: grey;
+  --secondary-color: black;
+  --topbar-blue: #27769f;
+  --background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.main-color-background {
+  background-color: var(--main-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.secondary-color-background {
+  background-color: var(--secondary-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+a {
+  cursor: pointer;
+}

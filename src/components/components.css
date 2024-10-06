@@ -1,0 +1,139 @@
+
+
+@media only screen and (max-width: 767px) {
+  .header-topbar {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 1.2rem 0 1.2rem 0;
+    justify-content: center;
+    background-color: var(--topbar-blue);
+    color: var(--background-color);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4% 0 4%;
+    min-height: 80px;
+    color: var(--background-color);
+  }
+
+  .header-logo {
+    height: 70%;
+  }
+
+  .header-cart-logo-container {
+    height: 50%;
+  }
+
+  .header-cart-logo {
+    height: 100%;
+  }
+
+  .header-cart-logo-badge {
+    position: relative;
+    background-color: var(--topbar-blue);
+    color: var(--background-color);
+    bottom: 0.5rem;
+    right: 2rem;
+    padding: .4rem 0.8rem 0.4rem 0.8rem;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .banner {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .home-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  .home-subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 0;
+    color: grey;
+  }
+  
+  .bags-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+  }
+  
+  .bag-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  
+  .bag-container-image {
+    height: 60vw;
+    min-height: 300px;
+    min-width: 200px;
+    overflow: hidden;
+  }
+
+  .bag-text-container {
+    margin-left: 5vw;
+  }
+
+  .bag-container-title {
+    font-size: 2rem;
+  }
+
+  .bag-container-price {
+    font-size: 2rem;
+    color: grey;
+  }
+
+  .bag-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 14rem;
+    background-color: var(--topbar-blue);
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+
+  .bag-container-details {
+    background-color: var(--topbar-blue);
+    color: white;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+
+  .bag-container-arrow {
+    height: 20px;
+    padding-right: 5px;
+  }
+
+  .footer-container {
+    display: flex;
+    min-height: 100px;
+    background-color: var(--topbar-blue);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
