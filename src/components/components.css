@@ -3,11 +3,14 @@
 @media only screen and (max-width: 767px) {
   .header-topbar {
     display: flex;
+    position: fixed;
+    width: 100%;
     font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    padding: 1.2rem 0 1.2rem 0;
+    min-height: 3rem;
     justify-content: center;
+    align-items: center;
     background-color: var(--topbar-blue);
     color: var(--background-color);
   }
@@ -16,9 +19,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4% 0 4%;
-    min-height: 80px;
-    color: var(--background-color);
+    top: 3rem;
+    position: fixed;
+    width: 94%;
+    padding: 0 2% 0 4%;
+    min-height: 8rem;
+    background-color: var(--background-color);
   }
 
   .header-logo {
@@ -26,7 +32,7 @@
   }
 
   .header-cart-logo-container {
-    height: 50%;
+    height: 4rem;
   }
 
   .header-cart-logo {
@@ -39,7 +45,7 @@
     color: var(--background-color);
     bottom: 0.5rem;
     right: 2rem;
-    padding: .4rem 0.8rem 0.4rem 0.8rem;
+    padding: .3rem 0.6rem 0.3rem 0.6rem;
     border-radius: 50%;
     font-size: 1rem;
   }
@@ -70,7 +76,7 @@
   .bags-container {
     display: flex;
     flex-direction: column;
-    padding: 2vw;
+    padding: 1vw 4vw 1vw 4vw;
   }
   
   .bag-container {
@@ -105,7 +111,7 @@
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    width: 14rem;
+    width: 16rem;
     background-color: var(--topbar-blue);
     cursor: pointer;
     border-radius: 1rem;
@@ -114,14 +120,14 @@
   .bag-container-details {
     background-color: var(--topbar-blue);
     color: white;
-    padding-left: 10px;
+    padding-left: 1.5rem;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.1rem;
   }
 
   .bag-container-arrow {
-    height: 20px;
+    height: 1.8rem;
     padding-right: 5px;
   }
 
@@ -129,6 +135,24 @@
     display: flex;
     min-height: 100px;
     background-color: var(--topbar-blue);
+  }
+
+  .cart-closed-slider {
+    width: 0vw;
+  }
+
+  .cart-opened-slider {
+    width: 100vw;
+  }
+
+  .cart-container {
+    background-color: white;
+    top: 11rem;
+    height: calc(100vh - 11rem);
+    position: fixed;
+    right: 0;
+    transition: width 0.5s ease;
+    z-index: 1;
   }
 }
 
