@@ -12,18 +12,29 @@ const SideCart = ({ cartState }: Props) => {
         <div className={`cart-container ${cartState}-slider`}>
             {
                 true ? (
-                    <>
-                        <h2>Your Cart</h2>
-                        <p>Product</p>
-                        <p>Total</p>
-                        <p>Estimated total</p>
-                        <p></p>
-                        <p>Tax included. Shipping and discounts calculated at checkout</p>
-                    </>
+                    <div className='cart-info-container'>
+                        <div className='cart-header'>
+                            <h2 className='cart-title'>Your Cart</h2>
+                            <div className='cart-prod-total'>
+                                <p className=''>Product</p>
+                                <p className=''>Total</p>
+                            </div>
+                        </div>
+                        <div className='cart-items-container'>
+                            tt
+                        </div>
+                        <div className='cart-footer'>
+                            <div className='cart-prod-total'>
+                                <p className=''>Estimated total</p>
+                                <p className=''>$$$</p>
+                            </div>
+                            <p className=''>Tax included. Shipping and discounts calculated at checkout</p>
+                        </div>
+                    </div>
                 ) : (
-                    <>
-                        <h1>Your cart is empty</h1>
-                    </>
+                    <div className='cart-info-container'>
+                        <h1 className='cart-title'>Your cart is empty</h1>
+                    </div>
                 )
             }
         </div>
